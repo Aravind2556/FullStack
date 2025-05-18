@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gold;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+ 
+  height: 20vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aqua;
+  color: red;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  
+}
+
+.subContainer {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hide the checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hide menu icon by default */
+.menuIconHeader {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+
+.aboutContainer{
+    height: 100%;
+   
+   display: flex;
+   flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+}
+.aboutbox{
+    width: 15rem;
+    height: 450px;
+    border: 2px solid green;
+    border-radius: 20px;
+    background-color: coral;
+}
+
+
+
+
+
+.textContentContainerParents{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+.textContentContainer{
+    display: inline;
+    width: 800px;
+    border: 2px solid red;
+    padding: 10px;
+    box-shadow: red 1px 1px 50px 20px;
+    
+}
+.h1,.p{
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive rules */
+@media (max-width: 600px) {
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aqua;
+  color: red;
+  font-size: 10px;
+  position: sticky;
+  top: 0px;
+
+  z-index: 2;
+  
+}
+
+
+  .menuIconHeader {
+    display: block;
+  }
+
+  .subContainer {
+    display: none;
+
+    gap: 20px;
+    background-color: rgb(18, 148, 192);
+    position: absolute;
+    top: 70px; /* below header */
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  /* When checkbox is checked, show the menu */
+  #menu-toggle:checked + .menuIconHeader + .subContainer {
+    display:  grid;
+    font-size: xx-large;
+    color: chartreuse;
+    background-color: chocolate;
+    font-weight: 900;
+  }
+
+
+
+
+
+  .aboutContainer{
+    height: 100%;
+   
+   display: flex;
+   flex-wrap: wrap;
+     gap: 10px;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+}
+.aboutbox{
+    width: 10rem;
+    height: 300px;
+    border: 2px solid rgb(245, 106, 0);
+    border-radius: 20px;
+    background-color: rgb(255, 6, 184);
+}
+}
